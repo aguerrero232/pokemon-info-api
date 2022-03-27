@@ -15,7 +15,7 @@ exports.findAll = (req, res) => {
 
 exports.findOne = (req, res) => {
     // mongoose find pokemon  by pokedex_number
-    Pokemon.find({
+    Pokemon.findOne({
         pokedex_number: req.params.id
     })
         .then(pokemon => {
