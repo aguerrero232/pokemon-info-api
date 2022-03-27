@@ -1,66 +1,39 @@
 const Pokemon = require('../models/pokemon.model.js');
 
-// // Create and Save a new reservation
-// exports.create = (req, res) => {
-//     //Check for pre-existing emails
-//     console.log("tests")
 
-//     // Create a User.
-//     const pokemon = new Pokemon({
-//         pokedex_number: req.body.pokedex_number,
-//         generation: req.body.generation,
-//         name: req.body.name,
-//         description: req.body.description,
-//         sound_name: req.body.sound_name,
-//         image_name: req.body.image_name
-//     });
+exports.findAll = (req, res) => {
+    Pokemon.find()
+        .then(pokemon => {
+            res.send(pokemon);
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: err.message || "Some error occurred while retrieving pokemon."
+            });
+        });
+};
 
-//     // Save user in the database
-//     pokemon.save()
-//         .then(data => {
-//             res.send(data);
-//         }).catch(err => {
-//             res.status(500).send({
-//                 message: err.message || "Some error occurred while creating the user."
-//             });
-//         });
+exports.findOne = (req, res) => {
+    // mongoose find pokemon  by pokedex_number
+    Pokemon.find({
+        pokedex_number: req.params.id
+    })
+        .then(pokemon => {
+            res.send(pokemon);
+        })
+        .catch(err => {
 
-// };
+            if (err.kind === 'ObjectId') {
+                return res.status(404).send({
+                    message: "Pokemon not found with id " + req.params.id
+                });
+            }
 
-
-// exports.findAll = (req, res) => {
-//     Pokemon.find()
-//         .then(pokemon => {
-//             res.send(pokemon);
-//         })
-//         .catch(err => {
-//             res.status(500).send({
-//                 message: err.message || "Some error occurred while retrieving pokemon."
-//             });
-//         });
-// };
-
-// exports.findOne = (req, res) => {
-//     // mongoose find pokemon  by pokedex_number
-//     Pokemon.find({
-//         pokedex_number: req.params.id
-//     })
-//         .then(pokemon => {
-//             res.send(pokemon);
-//         })
-//         .catch(err => {
-
-//             if (err.kind === 'ObjectId') {
-//                 return res.status(404).send({
-//                     message: "Pokemon not found with id " + req.params.id
-//                 });
-//             }
-
-//             return res.status(500).send({
-//                 message: "Error retrieving pokemon with id " + req.params.id
-//             });
-//         });
-// };
+            return res.status(500).send({
+                message: "Error retrieving pokemon with id " + req.params.id
+            });
+        });
+};
 
 // find pokemon based on gen id
 exports.findByGen = (req, res) => {
