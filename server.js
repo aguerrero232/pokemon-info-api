@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const port = normalizePort(process.env.PORT || '6969');
+const port = process.env.PORT || 5000;
 const database_uri = "mongodb+srv://ariel:pokemon@seprojectcluster.ea5vl.mongodb.net/retro_pokemon_game?retryWrites=true&w=majority";
 
 mongoose.set('useFindAndModify', false);
@@ -9,19 +9,6 @@ mongoose.set('useFindAndModify', false);
 // create express app
 const app = express();
 app.use(cors());
-
-function normalizePort(val) {
-    var port = parseInt(val, 10);
-    if (isNaN(port)) {
-        // named pipe
-        return val;
-    }
-    if (port >= 0) {
-        // port number
-        return port;
-    }
-    return false;
-}
 
 app.use(express.urlencoded({
     extended: true
