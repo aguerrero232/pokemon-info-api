@@ -2,8 +2,8 @@ module.exports = (app) => {
     const pokemon = require('../controllers/pokemon.controller.js');
 
 
-    // Create a new user
-    app.post('/pokemon', pokemon.create);
+    // // Create a new user
+    // app.post('/pokemon', pokemon.create);
 
     // Retrieve all pokemon
     app.get('/pokemon', pokemon.findAll);
