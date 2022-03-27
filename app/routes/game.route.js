@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    const users = require('../controllers/game.controller.js');
+    const game = require('../controllers/game.controller.js');
 
     // Retrieve all high scores for each game
     app.get('/game', game.findAll);

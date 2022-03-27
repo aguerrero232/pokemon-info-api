@@ -22,13 +22,13 @@ exports.create = (req, res) => {
         });
     }
 
-    if(!req.body.favorite_generation){
+    if (!req.body.favorite_generation) {
         return res.status(400).send({
             message: "Favorite generation cannot be empty"
         });
     }
 
-    if(!req.body.favorite_pokemon){
+    if (!req.body.favorite_pokemon) {
         return res.status(400).send({
             message: "Favorite pokemon cannot be empty"
         });
@@ -112,28 +112,29 @@ exports.update = (req, res) => {
         });
     }
 
-    if(!req.body.favorite_generation){
+    if (!req.body.favorite_generation) {
         return res.status(400).send({
             message: "Favorite generation cannot be empty"
         });
     }
 
-    if(!req.body.favorite_pokemon){
+    if (!req.body.favorite_pokemon) {
         return res.status(400).send({
             message: "Favorite pokemon cannot be empty"
         });
     }
 
+
     // Find hotel and update it with the request body
     User.findByIdAndUpdate(req.params.userId, {
-            email: req.body.email,
-            password: req.body.password,
-            username: req.body.username,
-            favorite_generation: req.body.favorite_generation,
-            favorite_pokemon: req.body.favorite_pokemon
-        }, {
-            new: true
-        })
+        email: req.body.email,
+        password: req.body.password,
+        username: req.body.username,
+        favorite_generation: req.body.favorite_generation,
+        favorite_pokemon: req.body.favorite_pokemon
+    }, {
+        new: true
+    })
         .then(user => {
             if (!user) {
                 return res.status(404).send({

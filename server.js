@@ -1,15 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
-//const cors = require('cors');
+// const cors = require('cors');
 const port = normalizePort(process.env.PORT || '10000');
-
 const database_uri = "mongodb+srv://ariel:pokemon@seprojectcluster.ea5vl.mongodb.net/retro_pokemon_game?retryWrites=true&w=majority";
 
 mongoose.set('useFindAndModify', false);
 
 // create express app
 const app = express();
-app.use(cors());
+// app.use(cors());
 
 function normalizePort(val) {
     var port = parseInt(val, 10);

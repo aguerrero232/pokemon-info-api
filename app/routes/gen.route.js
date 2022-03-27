@@ -1,5 +1,5 @@
 module.exports = (app) => {
-    const users = require('../controllers/gen.controller.js');
+    const gen = require('../controllers/gen.controller.js');
 
     // Retrieve all gens
     app.get('/gens', gen.findAll);
