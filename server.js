@@ -37,12 +37,6 @@ mongoose.connect(database_uri, {
     process.exit();
 });
 
-// simple route
-app.get('/', (req, res) => {
-    res.json({
-        "message": "Rowdyhacks 2022"
-    });
-});
 
 // listen for requests
 app.listen(port, () => {
