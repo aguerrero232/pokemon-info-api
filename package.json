@@ -13,7 +13,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "mongodb": "^4.1.0",
-    "mongoose": "^5.13.8",
-    "request": "^2.88.2"
+    "mongoose": "^5.13.8"
   }
 }

@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const port = normalizePort(process.env.PORT || '10000');
+const port = normalizePort(process.env.PORT || '6969');
 const database_uri = "mongodb+srv://ariel:pokemon@seprojectcluster.ea5vl.mongodb.net/retro_pokemon_game?retryWrites=true&w=majority";
 
 mongoose.set('useFindAndModify', false);
@@ -12,17 +12,14 @@ app.use(cors());
 
 function normalizePort(val) {
     var port = parseInt(val, 10);
-
     if (isNaN(port)) {
         // named pipe
         return val;
     }
-
     if (port >= 0) {
         // port number
         return port;
     }
-
     return false;
 }
 
@@ -47,17 +44,7 @@ mongoose.connect(database_uri, {
     useUnifiedTopology: true
 }).then(() => {
     console.log("Successfully connected to the database");
-    mongoose.connection.db.listCollections().toArray(function (err, names) {
-        if (err) {
-            console.log(err);
-        }
-        else {
-            names.forEach(function (e, i, a) {
-                console.log("--->>", e.name);
 
-            });
-        }
-    });
 }).catch(err => {
     console.log('Could not connect to the database. Exiting now...\n', err);
     process.exit();
