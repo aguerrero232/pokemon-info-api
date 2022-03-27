@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const GameSchema = mongoose.Schema({
     stt_hs: [{
         userId: Number
@@ -8,6 +7,6 @@ const GameSchema = mongoose.Schema({
     tr_hs: [{
         userId: Number
     }]
-})
+});
 
-module.exports = mongoose.model('Game', PokemonSchema);
+module.exports = mongoose.model('Games', PokemonSchema);

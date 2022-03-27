@@ -5,4 +5,4 @@ const GenSchema = mongoose.Schema({
     name: String
 });
 
-module.exports = mongoose.model('Gen', GenSchema);
+module.exports = mongoose.model('Gens', GenSchema);

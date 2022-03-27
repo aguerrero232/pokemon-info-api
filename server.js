@@ -32,16 +32,13 @@ app.use(express.urlencoded({
 
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 
-// Require hotel routes
-require('./app/routes/user.routes.js')(app);
+// Require routes
+require('./app/routes/user.route.js')(app);
 require('./app/routes/pokemon.route.js')(app);
 require('./app/routes/gen.route.js')(app);
 
 
 // Configuring the database
-// const dbConfig = require('./config/database.config.js');
-
-
 mongoose.Promise = global.Promise;
 
 // Connecting to the database
@@ -50,7 +47,17 @@ mongoose.connect(database_uri, {
     useUnifiedTopology: true
 }).then(() => {
     console.log("Successfully connected to the database");
+    mongoose.connection.db.listCollections().toArray(function (err, names) {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            names.forEach(function (e, i, a) {
+                console.log("--->>", e.name);
 
+            });
+        }
+    });
 }).catch(err => {
     console.log('Could not connect to the database. Exiting now...\n', err);
     process.exit();
@@ -59,7 +66,7 @@ mongoose.connect(database_uri, {
 // simple route
 app.get('/', (req, res) => {
     res.json({
-        "message": "Software Engineering Project"
+        "message": "Rowdyhacks 2022"
     });
 });
 

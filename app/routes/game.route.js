@@ -7,5 +7,4 @@ module.exports = (app) => {
     // Retrieve a single set of high scores for a game
     app.get('/game/:id', game.findOne);
 
-
 }
