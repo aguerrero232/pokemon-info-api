@@ -1,5 +1,9 @@
 # Retro Pokemon Game Api
 
+## Contributors
+
+* Ariel Guerrero - Lead Developer
+
 ***API URL***
 [https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/](https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/)
 
@@ -25,9 +29,24 @@ gets all pokemon in a specific generation
 
 ### Schema
 
-    pokedex_number: Number,
     generation: Number,
+    pokedex_number: Number,
     name: String,
     description: String,
-    sound_name: String,
-    image_name: String
+    species: String,
+    type_1: String,
+    type_2: String,
+    height_m: Number,
+    weight_kg: Number,
+    ability_1: String,
+    ability_2: String,
+    ability_hidden: String,
+    stat_total: Number,
+    hp: Number,
+    attack: Number,
+    defense: Number,
+    sp_attack: Number,
+    sp_defense: Number,
+    speed: Number,
+    sound_link: String,
+    image_link: String
