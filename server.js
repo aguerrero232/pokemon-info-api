@@ -21,7 +21,6 @@ require('./app/routes/user.route.js')(app);
 require('./app/routes/pokemon.route.js')(app);
 require('./app/routes/gen.route.js')(app);
 
-
 // Configuring the database
 mongoose.Promise = global.Promise;
 
