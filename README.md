@@ -13,9 +13,15 @@ gets all pokemon in database
 
 gets a specific pokemon by pokedex number
 
+    :id is the pokedex number of the pokemon you wish to receive
+        returns a json pokemon object
+
 ### /pokemon/gen/:GenId
 
 gets all pokemon in a specific generation
+
+        :GenId is the generation number of the pokemon generation you wish to receive
+            returns a list of json pokemon object
 
 ### Schema
 
