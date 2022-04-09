@@ -50,3 +50,22 @@ gets all pokemon in a specific generation
     speed: Number,
     sound_link: String,
     image_link: String
+    
+___
+
+### Sample Endpoints
+
+        Get all pokemon 
+      
+      
+***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon***
+
+        Get pokemon with pokedex number of 6
+        
+        
+***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/1***
+
+
+        Get all pokemon from gen 2
+
+***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2***
