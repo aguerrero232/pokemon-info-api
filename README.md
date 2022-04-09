@@ -63,7 +63,7 @@ ___
         Get pokemon with pokedex number of 6
         
         
-***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/1***
+***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6***
 
 
         Get all pokemon from gen 2
