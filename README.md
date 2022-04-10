@@ -4,6 +4,9 @@
 
 * Ariel Guerrero - Lead Developer
 
+
+![](https://projectpokemon.org/images/normal-sprite/tyranitar.gif) ![](https://projectpokemon.org/images/normal-sprite/hydreigon.gif)
+
 ***API URL***
 [https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/](https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/)
 
