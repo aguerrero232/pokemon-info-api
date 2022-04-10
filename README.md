@@ -4,7 +4,6 @@
 
 * Ariel Guerrero - Lead Developer
 
-
 ![](https://projectpokemon.org/images/normal-sprite/scizor.gif) ![](https://projectpokemon.org/images/normal-sprite/blaziken.gif) ![](https://projectpokemon.org/images/normal-sprite/tyranitar.gif) ![](https://projectpokemon.org/images/normal-sprite/darkrai.gif) ![](https://projectpokemon.org/images/normal-sprite/lucario.gif) ![](https://projectpokemon.org/images/normal-sprite/greninja.gif)
 
 ***API URL***
@@ -12,25 +11,25 @@
 
 ## Endpoints
 
-### /pokemon
+### ***/pokemon***
 
-gets all pokemon in database
+gets ***all pokemon*** in database
 
-### /pokemon/:id
+### ***/pokemon/:id***
 
-gets a specific pokemon by pokedex number
+gets a ***specific pokemon*** by pokedex number
 
     :id is the pokedex number of the pokemon you wish to receive
         returns a json pokemon object
 
-### /pokemon/gen/:GenId
+### ***/pokemon/gen/:GenId***
 
-gets all pokemon in a specific generation
+gets all pokemon in a ***specific generation***
 
         :GenId is the generation number of the pokemon generation you wish to receive
             returns a list of json pokemon object
 
-### Schema
+### ***Schema***
 
     generation: Number,
     pokedex_number: Number,
@@ -53,22 +52,19 @@ gets all pokemon in a specific generation
     speed: Number,
     sound_link: String,
     image_link: String
-    
+
 ___
 
 ### Sample Endpoints
 
         Get all pokemon 
-      
-      
-***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon***
+
+***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon>***
 
         Get pokemon with pokedex number of 6
-        
-        
-***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6***
 
+***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6>***
 
         Get all pokemon from gen 2
 
-***https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2***
+***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2>***
