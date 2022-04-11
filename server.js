@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const port = process.env.PORT || 5000;
-const database_uri = "mongodb+srv://ariel:pokemon@seprojectcluster.ea5vl.mongodb.net/retro_pokemon_game?retryWrites=true&w=majority";
+const database_uri = "USE YOUR OWN URI HERE";
 
 mongoose.set('useFindAndModify', false);
 
