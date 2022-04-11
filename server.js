@@ -1,14 +1,16 @@
+require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('cors');
+// const cors = require('cors');
+
 const port = process.env.PORT || 5000;
-const database_uri = "mongodb+srv://ariel:pokemon@seprojectcluster.ea5vl.mongodb.net/retro_pokemon_game?retryWrites=true&w=majority";
+const database_uri = process.env.DB_URI;
 
 mongoose.set('useFindAndModify', false);
 
 // create express app
 const app = express();
-app.use(cors());
+// app.use(cors());
 
 app.use(express.urlencoded({
     extended: true
