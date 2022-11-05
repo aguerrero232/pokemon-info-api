@@ -25,7 +25,7 @@
 
 ### ***Schema***
    
-   ```json
+   ```yaml
    generation: Number
    pokedex_number: Number
    name: String
