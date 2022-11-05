@@ -23,17 +23,13 @@
 ## Sample Endpoints
 
 * get all pokemon 
-
-***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon>***
+   * ***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon>***
 
 * get pokemon with pokedex number of 6
-
-***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6>***
+   * ***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6>***
 
 * get all pokemon from gen 2
-
-***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2>***
-
+   * ***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2>***
 
 ## ***Schema***
    
