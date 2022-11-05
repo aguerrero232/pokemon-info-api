@@ -1,9 +1,5 @@
 # Retro Pokemon Game Api
 
-## Contributors
-
-* Ariel Guerrero - Lead Developer
-
 ![](https://projectpokemon.org/images/normal-sprite/scizor.gif) ![](https://projectpokemon.org/images/normal-sprite/blaziken.gif) ![](https://projectpokemon.org/images/normal-sprite/tyranitar.gif) ![](https://projectpokemon.org/images/normal-sprite/darkrai.gif) ![](https://projectpokemon.org/images/normal-sprite/lucario.gif) ![](https://projectpokemon.org/images/normal-sprite/greninja.gif)
 
 ***API URL***
@@ -23,7 +19,23 @@
     * `:GenId` is the generation number of the pokemon generation you wish to receive
         * returns a list of json pokemon object
 
-### ***Schema***
+
+## Sample Endpoints
+
+* get all pokemon 
+
+***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon>***
+
+* get pokemon with pokedex number of 6
+
+***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6>***
+
+* get all pokemon from gen 2
+
+***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2>***
+
+
+## ***Schema***
    
    ```yaml
    generation: Number
@@ -48,18 +60,4 @@
    sound_link: String
    image_link: String
    ```
-___
 
-### Sample Endpoints
-
-* get all pokemon 
-
-***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon>***
-
-* get pokemon with pokedex number of 6
-
-***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6>***
-
-* get all pokemon from gen 2
-
-***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2>***
