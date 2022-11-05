@@ -19,8 +19,8 @@ gets ***all pokemon*** in database
 
 gets a ***specific pokemon*** by pokedex number
 
-    :id is the pokedex number of the pokemon you wish to receive
-        returns a json pokemon object
+`:id` is the pokedex number of the pokemon you wish to receive
+* returns a json pokemon object
 
 ### ***/pokemon/gen/:GenId***
 
