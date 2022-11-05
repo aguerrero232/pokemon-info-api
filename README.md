@@ -26,26 +26,26 @@
 ### ***Schema***
    
    ```json
-   generation: Number,
-   pokedex_number: Number,
-   name: String,
-   description: String,
-   species: String,
-   type_1: String,
-   type_2: String,
-   height_m: Number,
-   weight_kg: Number,
-   ability_1: String,
-   ability_2: String,
-   ability_hidden: String,
-   stat_total: Number,
-   hp: Number,
-   attack: Number,
-   defense: Number,
-   sp_attack: Number,
-   sp_defense: Number,
-   speed: Number,
-   sound_link: String,
+   generation: Number
+   pokedex_number: Number
+   name: String
+   description: String
+   species: String
+   type_1: String
+   type_2: String
+   height_m: Number
+   weight_kg: Number
+   ability_1: String
+   ability_2: String
+   ability_hidden: String
+   stat_total: Number
+   hp: Number
+   attack: Number
+   defense: Number
+   sp_attack: Number
+   sp_defense: Number
+   speed: Number
+   sound_link: String
    image_link: String
    ```
 ___
