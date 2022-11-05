@@ -26,8 +26,8 @@ gets a ***specific pokemon*** by pokedex number
 
 gets all pokemon in a ***specific generation***
 
-        :GenId is the generation number of the pokemon generation you wish to receive
-            returns a list of json pokemon object
+`:GenId` is the generation number of the pokemon generation you wish to receive
+* returns a list of json pokemon object
 
 ### ***Schema***
 
@@ -57,14 +57,14 @@ ___
 
 ### Sample Endpoints
 
-        Get all pokemon 
+* get all pokemon 
 
 ***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon>***
 
-        Get pokemon with pokedex number of 6
+* get pokemon with pokedex number of 6
 
 ***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/6>***
 
-        Get all pokemon from gen 2
+* get all pokemon from gen 2
 
 ***<https://retro-pokemon-game-api-k6cgale4bq-uc.a.run.app/pokemon/gen/2>***
