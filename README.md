@@ -8,7 +8,7 @@
 ## Endpoints
 
 * ***/pokemon***
-    * gets ***all pokemon*** in database
+    * gets ***all pokemon***
 
 * ***/pokemon/`:id`***
     * gets a ***specific pokemon*** by pokedex number
@@ -17,8 +17,6 @@
 * ***/pokemon/gen/`:GenId`***
     * gets all pokemon in a ***specific generation***
     * `:GenId` is the generation number of the pokemon generation you wish to receive
-        * returns a list of json pokemon object
-
 
 ## Sample Endpoints
 
