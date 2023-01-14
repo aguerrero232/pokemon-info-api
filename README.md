@@ -1,4 +1,4 @@
-# Retro Pokemon Game Api
+# Pokemon Api
 
 ![](https://projectpokemon.org/images/normal-sprite/scizor.gif) ![](https://projectpokemon.org/images/normal-sprite/blaziken.gif) ![](https://projectpokemon.org/images/normal-sprite/tyranitar.gif) ![](https://projectpokemon.org/images/normal-sprite/darkrai.gif) ![](https://projectpokemon.org/images/normal-sprite/lucario.gif) ![](https://projectpokemon.org/images/normal-sprite/greninja.gif)
 
